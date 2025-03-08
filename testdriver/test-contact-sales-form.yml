@@ -1,0 +1,57 @@
+version: 4.2.13
+session: 67cbd700969d7bd391f81da0
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click on the "Contact Sales" button.
+    commands:
+      - command: hover-text
+        text: Contact Sales
+        description: button in the top right of the header
+        action: click
+  - prompt: Fill in the contact form with dummy data.
+    commands:
+      - command: hover-text
+        text: First Name
+        description: label for the first name input field
+        action: click
+      - command: type
+        text: John
+      - command: hover-text
+        text: Last Name
+        description: label for the last name input field
+        action: click
+      - command: type
+        text: Doe
+      - command: hover-text
+        text: Email Address
+        description: label for the email address input field
+        action: click
+      - command: type
+        text: johndoe@example.com
+      - command: hover-text
+        text: Company Name
+        description: label for the company name input field
+        action: click
+      - command: type
+        text: Example Corp
+      - command: hover-text
+        text: Use Case
+        description: label for the use case dropdown
+        action: click
+      - command: type
+        text: Testing
+      - command: hover-text
+        text: Country
+        description: label for the country dropdown
+        action: click
+      - command: type
+        text: USA
+      - command: hover-text
+        text: Message
+        description: label for the message input field
+        action: click
+      - command: type
+        text: This is a test message.
