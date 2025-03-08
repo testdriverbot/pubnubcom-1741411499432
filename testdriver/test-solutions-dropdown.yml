@@ -1,0 +1,21 @@
+version: 4.2.13
+session: 67cbd6fbd07e71bfd53a707f
+steps:
+  - prompt: Hover over the "Solutions" menu item in the navigation bar.
+    commands:
+      - command: hover-text
+        text: Solutions
+        description: solutions menu item in the navigation bar
+        action: hover
+  - prompt: Click on one of the dropdown options.
+    commands:
+      - command: hover-text
+        text: Chat
+        description: chat option in the solutions dropdown
+        action: click
+  - prompt: >-
+      Assert that the corresponding solutions page loads successfully.  # Use
+      the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Build communities with live chat functionality
